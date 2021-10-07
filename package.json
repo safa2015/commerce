@@ -1,0 +1,30 @@
+{
+  "name": "ecommerce-shopping-card",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seederScript.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.1",
+    "components": "^0.1.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "ignore": "^5.1.8",
+    "mongoose": "^6.0.5",
+    "react-bootstrap": "^2.0.0-rc.0",
+    "styled": "^1.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.1",
+    "nodemon": "^2.0.12"
+  }
+}
